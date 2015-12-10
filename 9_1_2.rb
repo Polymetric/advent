@@ -1,5 +1,5 @@
 # fun with nested hashes
-distances = Hash.new { |h,k| h[k] = {} }
+distances = Hash.new { |h,k| h[k] = Hash.new }
 
 File.read('9.input').each_line do |line|
   # fun with regex
